@@ -9,7 +9,7 @@
         <div>
           <el-dropdown trigger="click" @command="handleCommand">
             <span class="el-dropdown-link">
-                <el-icon class="el-icon-user"><User/></el-icon>
+                <el-icon class="el-icon-user" :size="25"><User/></el-icon>
             </span>
             <template #dropdown>
               <el-dropdown-menu>
@@ -140,12 +140,13 @@ export default {
   justify-content: space-between;
   color: #fff;
   font-size: 20px;
+  padding-top: 5px;
 }
 
 .el-header img {
   vertical-align: middle;
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   margin-right: 15px;
 }
