@@ -1,5 +1,5 @@
 <template>
-  <p>测试页面</p>
+  <p>测试页面一</p>
 </template>
 
 <script>

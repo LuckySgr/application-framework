@@ -19,6 +19,11 @@ export default {
   methods: {
     startContainer() {
       window.sessionStorage.setItem('startActivation', 'goHome')
+      this.$message({
+        message: 'Welcome To The FrontEnd ApplicationFramework',
+        type: 'success',
+        center: true
+      })
       this.$router.push('/Home')
     }
   }
