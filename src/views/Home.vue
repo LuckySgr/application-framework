@@ -104,7 +104,7 @@ export default {
       window.sessionStorage.removeItem('activePath');
       this.$router.push({path: '/'})
       this.$message({
-        message: '退出成功',
+        message: 'See You Later',
         type: 'success',
         center: true
       })
