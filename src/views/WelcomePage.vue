@@ -4,7 +4,7 @@
       <p class="font_container">Welcome To</p>
       <p class="font_container">The FrontEnd</p>
       <p class="font_container">ApplicationFramework</p>
-      <div class="btn_container" @click="selectContainer()">
+      <div class="btn_container" @click="startContainer()">
         Start
       </div>
     </div>
@@ -17,8 +17,8 @@ export default {
     return {}
   },
   methods: {
-    selectContainer(val) {
-      window.sessionStorage.setItem('selectType', val)
+    startContainer() {
+      window.sessionStorage.setItem('startActivation', 'goHome')
       this.$router.push('/Home')
     }
   }
