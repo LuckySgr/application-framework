@@ -44,7 +44,7 @@
               :router="true"
               :default-active="activePath"
               :collapse-transition="false">
-            <el-sub-menu :index="item.id" v-for="item in menuList" :key="item.id">
+            <el-sub-menu :index="String(item.id)" v-for="item in menuList" :key="item.id">
               <template #title>
                 <el-icon :size="18">
                   <component :is="item.menuIcon"></component>
